@@ -82,8 +82,9 @@ data_xtdf = filter_dict_by_key(data_detct2, '0:xtdf')
 data_images = filter_dict_by_key(data_xtdf, 'image')
 data_img_asd = filter_dict_by_key(data_images, 'data')
 
-# This part is not really needed, it is possible to access the data 
-# with specifying path to images like:
+# This part is not really needed (the file name prefix uses keys 
+# from the data_detct2 so it will fail without it), 
+# it is possible to access the data with specifying path to images like:
 data_img_data = tmpf["INSTRUMENT/DETLAB_LAB_DAQ-0/DET/0:xtdf/image/data"]
 # This is the point when the dataset with images is reached.
 
